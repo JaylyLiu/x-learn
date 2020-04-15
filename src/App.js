@@ -14,7 +14,7 @@ function App() {
           <span>LessonDetail</span>
         </Link>
         <span>&nbsp;&nbsp;</span>
-        <Link to="/">
+        <Link to="/homepage">
           <span>Homepage</span>
         </Link>
         <Switch>
