@@ -3,12 +3,12 @@ import cx from 'classnames';
 import { Link } from 'react-router-dom';
 
 import Avatar from './images/avatar.png';
-import America from './images/America.png';
-import China from './images/China.png';
-import Japan from './images/Japan.png';
-import Korea from './images/Korea.png';
-import Paris from './images/Paris.png';
-import Russia from './images/Russia.png';
+import America from './images/us.png';
+import China from './images/cn.png';
+import Japan from './images/ja.png';
+import Korea from './images/ko.png';
+import Paris from './images/pa.png';
+import Russia from './images/ru.png';
 
 import HomepageStyles from './Homepage.module.scss';
 const styles = { ...HomepageStyles };
