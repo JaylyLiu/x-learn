@@ -10,11 +10,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Link to="/detail">
+        <Link to="/x-learn/detail">
           <span>LessonDetail</span>
         </Link>
         <span>&nbsp;&nbsp;</span>
-        <Link to="/homepage">
+        <Link to="/x-learn/homepage">
           <span>Homepage</span>
         </Link>
         <Switch>
