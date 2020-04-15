@@ -11,17 +11,17 @@ function App() {
     <Router>
       <div className="App">
         <Link to="/x-learn/detail">
-          <span>LessonDetail</span>
+          <span>LessonDetail1</span>
         </Link>
-        <span>&nbsp;&nbsp;1</span>
+        <span>&nbsp;&nbsp;</span>
         <Link to="/x-learn/homepage">
           <span>Homepage</span>
         </Link>
         <Switch>
-          <Route exact path="/homepage">
+          <Route exact path="/x-learn/homepage">
             <Homepage />
           </Route>
-          <Route path="/detail">
+          <Route path="/x-learn/detail">
             <LessonDetail />
           </Route>
         </Switch>
