@@ -18,7 +18,7 @@ function App() {
           <span>Homepage</span>
         </Link>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/homepage">
             <Homepage />
           </Route>
           <Route path="/detail">
