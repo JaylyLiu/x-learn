@@ -1,32 +1,32 @@
 import React from 'react';
 import Homepage from './page/Homepage';
 import LessonDetail from './page/LessonDetail';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter, Switch, Route, Link } from 'react-router-dom';
 
 
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
       <div className="App">
-        <Link to="/x-learn/detail">
-          <span>LessonDetail1</span>
+        <Link to="/detail">
+          <span>LessonDetail-2</span>
         </Link>
         <span>&nbsp;&nbsp;</span>
-        <Link to="/x-learn/homepage">
+        <Link to="/homepage">
           <span>Homepage</span>
         </Link>
         <Switch>
-          <Route exact path="/x-learn/homepage">
+          <Route exact path="/homepage">
             <Homepage />
           </Route>
-          <Route path="/x-learn/detail">
+          <Route path="/detail">
             <LessonDetail />
           </Route>
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
