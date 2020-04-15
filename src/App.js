@@ -13,7 +13,7 @@ function App() {
         <Link to="/x-learn/detail">
           <span>LessonDetail</span>
         </Link>
-        <span>&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;1</span>
         <Link to="/x-learn/homepage">
           <span>Homepage</span>
         </Link>
