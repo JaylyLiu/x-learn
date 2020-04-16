@@ -53,7 +53,7 @@ function Navigation() {
 }
 
 function Homepage() {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [currentCountry, setCurrentCountry] = useState('');
   const [payMethod, setPayMethod] = useState(0);
 
@@ -64,7 +64,10 @@ function Homepage() {
   }
 
   const handlePayMethodChanged = (index) => {
- console.log("xll");
+  }
+
+  const submit = () => {
+    setShow(false);
   }
 
   return (
@@ -150,7 +153,7 @@ function Homepage() {
             className={styles.confirmBtn}
             size="big"
             iistyle="main"
-            onClick={() => console.log('haha')}>
+            onClick={submit}>
             <span>Confirm</span>
           </Button>
         </Modal.Body>
