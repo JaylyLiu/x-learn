@@ -1,7 +1,7 @@
 import React from 'react';
 import Homepage from './page/Homepage';
 import LessonDetail from './page/LessonDetail';
-import { HashRouter, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 
 import './App.css';
