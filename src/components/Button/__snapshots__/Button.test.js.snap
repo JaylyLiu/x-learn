@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders big size button correctly 1`] = `
+<button
+  className="btn btn-big btn-default"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  Big size
+</button>
+`;
+
+exports[`Button renders correctly 1`] = `
+<button
+  className="btn btn-standard btn-default"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  Default
+</button>
+`;
+
+exports[`Button renders error button correctly 1`] = `
+<button
+  className="btn btn-standard btn-error"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  Error
+</button>
+`;
+
+exports[`Button renders instant-tutoring button correctly 1`] = `
+<button
+  className="btn btn-standard btn-instant-tutoring"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  Instant Tutoring
+</button>
+`;
+
+exports[`Button renders main button correctly 1`] = `
+<button
+  className="btn btn-standard btn-main"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  Main
+</button>
+`;
+
+exports[`Button renders medium size button correctly 1`] = `
+<button
+  className="btn btn-medium btn-default"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  Medium size
+</button>
+`;
+
+exports[`Button renders small size button correctly 1`] = `
+<button
+  className="btn btn-small btn-default"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  Small size
+</button>
+`;
+
+exports[`Button renders standard size button correctly 1`] = `
+<button
+  className="btn btn-standard btn-default"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  Standard size
+</button>
+`;
+
+exports[`Button renders success button correctly 1`] = `
+<button
+  className="btn btn-standard btn-success"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  Success
+</button>
+`;

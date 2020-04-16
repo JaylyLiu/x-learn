@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio renders correctly 1`] = `
+<label
+  className="i-radio-wrapper primary"
+>
+  <span
+    className="i-radio"
+    style={Object {}}
+  >
+    <input
+      checked={false}
+      className="i-radio-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="radio"
+    />
+    <span
+      className="i-radio-inner"
+    />
+  </span>
+</label>
+`;
+
+exports[`Radio renders darken correctly 1`] = `
+<label
+  className="i-radio-wrapper darken"
+>
+  <span
+    className="i-radio"
+    style={Object {}}
+  >
+    <input
+      checked={false}
+      className="i-radio-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="radio"
+    />
+    <span
+      className="i-radio-inner"
+    />
+  </span>
+  <span>
+    darken
+  </span>
+</label>
+`;
+
+exports[`Radio renders default with label correctly 1`] = `
+<label
+  className="i-radio-wrapper primary"
+>
+  <span
+    className="i-radio"
+    style={Object {}}
+  >
+    <input
+      checked={false}
+      className="i-radio-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="radio"
+    />
+    <span
+      className="i-radio-inner"
+    />
+  </span>
+  <span>
+    default
+  </span>
+</label>
+`;
+
+exports[`Radio renders primary correctly 1`] = `
+<label
+  className="i-radio-wrapper primary"
+>
+  <span
+    className="i-radio"
+    style={Object {}}
+  >
+    <input
+      checked={false}
+      className="i-radio-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="radio"
+    />
+    <span
+      className="i-radio-inner"
+    />
+  </span>
+  <span>
+    primary
+  </span>
+</label>
+`;
+
+exports[`Radio renders success correctly 1`] = `
+<label
+  className="i-radio-wrapper success"
+>
+  <span
+    className="i-radio"
+    style={Object {}}
+  >
+    <input
+      checked={false}
+      className="i-radio-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="radio"
+    />
+    <span
+      className="i-radio-inner"
+    />
+  </span>
+  <span>
+    success
+  </span>
+</label>
+`;
