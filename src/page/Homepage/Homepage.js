@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
 import cx from 'classnames';
-import Modal from '../../components/Modal';
-import Button from '../../components/Button';
-import Radio, { RadioGroup } from '../../components/Radio';
-import Visa from './images/Visa';
-import Paypal from './images/Paypal';
-import MasterCard from './images/MasterCard';
-import Express from './images/Express';
 import Avatar from './images/avatar.png';
 import America from './images/us.png';
 import China from './images/cn.png';
@@ -54,20 +47,12 @@ function Navigation() {
 function Homepage() {
   const [show, setShow] = useState(false);
   const [currentCountry, setCurrentCountry] = useState('');
-  const [payMethod, setPayMethod] = useState(0);
+  // const [payMethod, setPayMethod] = useState(0);
 
 
   const handleCountryBeClicked = (src) => {
     setShow(true);
     setCurrentCountry(src);
-  }
-
-  const handlePayMethodChanged = (index) => {
-  }
-
-  const submit = () => {
-    setShow(false);
-    console.log("hhhhxlll");
   }
 
   return (
@@ -112,52 +97,6 @@ function Homepage() {
           {/* </Link> */}
         </li>
       </ul>
-      <Modal show={show} onClose={() => setShow(false)} className={styles.confirmModal}>
-        <Modal.Body>
-          <div className={styles.title}>Total</div>
-          <div className={styles.account}>JPY 1245.20</div>
-          <div className={styles.payMethods}>
-            <RadioGroup
-              name="searchLan"
-              className={styles.radioGroup}
-              onChange={handlePayMethodChanged}
-              defaultValue={payMethod}>
-              <Radio iistyle="primary" value="card" key={0}>
-                <div className={styles.content}>
-                  <span className={styles.text}>Card</span>
-                  <div className={styles.visa}>
-                    <Visa />
-                  </div>
-                  <div className={styles.masterCard}>
-                    <MasterCard />
-                  </div>
-                  <div className={styles.express}>
-                    <Express />
-                  </div>
-                </div>
-              </Radio>
-              <Radio iistyle="primary" value="paypal" key={1}>
-                <div className={styles.content}>
-                  <span className={styles.text}>Paypal</span>
-                  <div className={styles.visa}>
-                    <Paypal />
-                  </div>
-                </div>
-              </Radio>
-            </RadioGroup>
-            {/* <div className={styles."}
-              <Radio iistyle="primary" value={language} key={index} />
-            </div> */}
-          </div>
-          <Button
-            className={styles.confirmBtn}
-            size="big"
-            iistyle="main"
-            onClick={submit}>
-            <span>Confirm</span>
-          </Button>
-        </Modal.Body>
-      </Modal>
     </div>
   )
 }

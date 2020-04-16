@@ -2,6 +2,8 @@ import React from 'react';
 import Homepage from './page/Homepage';
 import LessonDetail from './page/LessonDetail';
 import Schedule from './page/Schedule';
+import LessonList from './page/LessonList';
+import Profile from './page/Profile';
 import { HashRouter, Route } from 'react-router-dom';
 import './App.css';
 
@@ -26,6 +28,12 @@ function App() {
         </Route>
         <Route path="/schedule">
           <Schedule />
+        </Route>
+        <Route path="/lessonlist">
+          <LessonList />
+        </Route>
+        <Route path="/profile">
+          <Profile />
         </Route>
       </div>
     </HashRouter>
