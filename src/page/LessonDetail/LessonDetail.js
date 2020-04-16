@@ -2,12 +2,13 @@ import React from 'react';
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import LessonDetailStyles from './LessonDetail.module.scss';
+import "./Ld.scss";
 // import Korea from '../Homepage/images/ko.png';
 // import Paris from '../Homepage/images/pa.png';
 // import Russia from '../Homepage/images/ru.png';
-import hh from "./Imgs/hh.mp4";
-import ww from "./Imgs/ww.mp4";
-import uu from "./Imgs/uu.mp4";
+import cook from "./Imgs/cook.mp4";
+import WechatIMG43 from "./Imgs/WechatIMG43.png";
+
 const styles = {...LessonDetailStyles};
 
 function LessonDetail() {
@@ -17,21 +18,20 @@ function LessonDetail() {
       LessonDetail
       
 <Carousel
+ addArrowClickHandler
+>  
+<div className={styles.imgbox}>
+  <img className={styles.img} src={WechatIMG43} alt="cook"/>
+  </div> 
  
-  
-  addArrowClickHandler
->
       <video controls autoPlay controlsList="nodownload" className={styles.video} >
-         <source src={hh} type="video/mp4" />
+      <source src={cook} type="video/mp4" />
         </video>
-      <video controls autoPlay controlsList="nodownload"  className={styles.video}>
-        <source src={ww} type="video/mp4" />
-      </video>
-      <video controls autoPlay controlsList="nodownload"  className={styles.video}>
-        <source src={uu} type="video/mp4" />
-      </video>
-
-</Carousel>
+    </Carousel>
+    <div className={styles.contents}>
+      <header>Crafting</header>
+      <h1>Let’s build a guitar ourselves!!! </h1>
+     </div>
     </div>
   )
 }

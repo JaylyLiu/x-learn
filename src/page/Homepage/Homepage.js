@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import cx from 'classnames';
 import Modal from '../../components/Modal';
 import Button from '../../components/Button';
@@ -19,6 +20,7 @@ import HomepageStyles from './Homepage.module.scss';
 const styles = { ...HomepageStyles };
 
 function Navigation() {
+  
   const [selectedItem, setSelectedItem] = useState(0);
 
   return (
@@ -52,14 +54,21 @@ function Navigation() {
 }
 
 function Homepage() {
+  let History=useHistory();
   const [show, setShow] = useState(false);
   const [currentCountry, setCurrentCountry] = useState('');
   const [payMethod, setPayMethod] = useState(0);
 
 
-  const handleCountryBeClicked = (src) => {
-    setShow(true);
-    setCurrentCountry(src);
+  const handleCountryBeClicked = (src,country) => {
+    // setShow(true);
+    // setCurrentCountry(src);
+    console.log("this.proos",src);
+   
+    // eslint-disable-next-line no-undef
+    
+    // eslint-disable-next-line no-undef
+    History.push({ pathname: `detail/${src}`});
   }
 
   const handlePayMethodChanged = (index) => {
@@ -81,32 +90,32 @@ function Homepage() {
       <p className={styles.description}>Where do you want to go today ?</p>
       <Navigation />
       <ul className={styles.images}>
-        <li className={styles.li} onClick={handleCountryBeClicked.bind(Homepage, America)}>
+        <li className={styles.li} onClick={handleCountryBeClicked.bind(Homepage, "America")}>
           {/* <Link to="/detail"> */}
           <img src={America} alt="America" />
           {/* </Link> */}
         </li>
-        <li className={styles.li} onClick={handleCountryBeClicked.bind(Homepage, China)}>
+        <li className={styles.li} onClick={handleCountryBeClicked.bind(Homepage, "China")}>
           {/* <Link to="/detail"> */}
           <img src={China} alt="China" />
           {/* </Link> */}
         </li>
-        <li className={styles.li} onClick={handleCountryBeClicked.bind(Homepage, Japan)}>
+        <li className={styles.li} onClick={handleCountryBeClicked.bind(Homepage, "Japan")}>
           {/* <Link to="/detail"> */}
           <img src={Japan} alt="Japan" />
           {/* </Link> */}
         </li>
-        <li className={styles.li} onClick={handleCountryBeClicked.bind(Homepage, Korea)}>
+        <li className={styles.li} onClick={handleCountryBeClicked.bind(Homepage, "Korea")}>
           {/* <Link to="/detail"> */}
           <img src={Korea} alt="Korea" />
           {/* </Link> */}
         </li>
-        <li className={styles.li} onClick={handleCountryBeClicked.bind(Homepage, Paris)}>
+        <li className={styles.li} onClick={handleCountryBeClicked.bind(Homepage, "Paris")}>
           {/* <Link to="/detail"> */}
           <img src={Paris} alt="Paris" />
           {/* </Link> */}
         </li>
-        <li className={styles.li} onClick={handleCountryBeClicked.bind(Homepage, Russia)}>
+        <li className={styles.li} onClick={handleCountryBeClicked.bind(Homepage, "Russia")}>
           {/* <Link to="/detail"> */}
           <img src={Russia} alt="Russia" />
           {/* </Link> */}
