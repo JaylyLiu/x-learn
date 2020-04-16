@@ -64,7 +64,7 @@ function Homepage() {
   }
 
   const handlePayMethodChanged = (index) => {
-
+ console.log("xll");
   }
 
   return (
