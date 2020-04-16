@@ -67,6 +67,7 @@ function Homepage() {
 
   const submit = () => {
     setShow(false);
+    console.log("hhhhxlll");
   }
 
   return (
