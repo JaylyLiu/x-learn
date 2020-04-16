@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import cx from 'classnames';
-import { Link } from 'react-router-dom';
 import Modal from '../../components/Modal';
 import Button from '../../components/Button';
 import Radio, { RadioGroup } from '../../components/Radio';
