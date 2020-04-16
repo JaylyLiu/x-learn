@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_error</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ERROR/CONFIRMATION-IN-PAGE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="error-message---desktop" transform="translate(-1320.000000, -389.000000)">
+            <g id="Group-12-Copy" transform="translate(1301.000000, 359.000000)">
+                <g id="icon_error" transform="translate(30.000000, 41.000000) rotate(180.000000) translate(-30.000000, -41.000000) translate(20.000000, 31.000000)">
+                    <path d="M20,10 C20,15.5226667 15.5226667,20 10,20 C4.47733333,20 0,15.5226667 0,10 C0,4.47733333 4.47733333,0 10,0 C15.5226667,0 20,4.47733333 20,10 Z" id="Stroke-1" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M11,5.291 C11,4.73833333 10.552,4.291 10,4.291 C9.448,4.291 9,4.73833333 9,5.291 C9,5.843 9.448,6.291 10,6.291 C10.552,6.291 11,5.843 11,5.291 Z" id="Stroke-3" fill="#FFFFFF"></path>
+                    <path d="M10.1068,15.5006 L10.1068,8.40993333" id="Stroke-5" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
