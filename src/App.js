@@ -1,9 +1,8 @@
 import React from 'react';
 import Homepage from './page/Homepage';
 import LessonDetail from './page/LessonDetail';
+import Schedule from './page/Schedule';
 import { HashRouter, Route } from 'react-router-dom';
-
-
 import './App.css';
 
 function App() {
@@ -24,6 +23,9 @@ function App() {
         </Route>
         <Route path="/detail">
           <LessonDetail />
+        </Route>
+        <Route path="/schedule">
+          <Schedule />
         </Route>
       </div>
     </HashRouter>
