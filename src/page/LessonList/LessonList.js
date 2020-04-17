@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import dsbridge from 'dsbridge';
 import Lesson1 from './Lesson1.png';
 import Lesson2 from './Lesson2.png';
 import LessonStyles from './LessonList.module.scss';
 const styles = { ...LessonStyles };
 
 function LessonList() {
+  useEffect(() => {
+    dsbridge.call('hideBottomBar');
+    console.log('hideBottomBar');
+  }, [])
   return (
     <div className={styles.lessonList}>
 
