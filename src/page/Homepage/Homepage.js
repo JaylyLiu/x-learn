@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import cx from 'classnames';
+import dsbridge from 'dsbridge';
 import Avatar from './images/avatar.png';
 import America from './images/us.png';
 import China from './images/cn.png';
@@ -15,6 +16,10 @@ const styles = { ...HomepageStyles };
 function Navigation() {
   
   const [selectedItem, setSelectedItem] = useState(0);
+
+  const openListPage = () => {
+     dsbridge.call('openCountryList');
+  }
 
   return (
     <ul className={styles.navigation}>

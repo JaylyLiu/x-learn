@@ -3,6 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import cx from 'classnames';
 import ScheduleStyles from './Schedule.module.scss';
 import Button from '../../components/Button';
+import Notice from '../../components/Notice';
 import BlackArrow from './BlackArrow';
 import SelectedIcon from './SelectedIcon';
 import Modal from '../../components/Modal';
@@ -31,14 +32,13 @@ function Schedule(props) {
 
   const paySubmit = () => {
     setShow(false);
-    console.log(props)
+    Notice.success('Updated successfully', 1000);
     history.push({ pathname: '/lessonlist' });
   }
 
   const handlePayMethodChanged = (index) => {
     let pay_index = Number(index.target.value);
-    console.log(pay_index)
-    setPayMethod(index);
+    setPayMethod(pay_index);
   }
 
   return (

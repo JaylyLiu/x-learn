@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel, { Dots } from '@brainhubeu/react-carousel';
+import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import LessonDetailStyles from './LessonDetail.module.scss';
 import "./Ld.scss";
@@ -24,7 +24,9 @@ function LessonDetail() {
   <img className={styles.img} src={WechatIMG43} alt="cook"/>
   </div> 
  
-      <video controls autoPlay controlsList="nodownload" className={styles.video} >
+      <video controls 
+        // autoPlay 
+      controlsList="nodownload" className={styles.video} >
       <source src={cook} type="video/mp4" />
         </video>
     </Carousel>
