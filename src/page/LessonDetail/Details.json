@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1000,
+        "type": "FOOD",
+        "title": "Traditional French food cooking experience",
+        "location": "France, Paris",
+        "author": "Lina Manson",
+        "language": "French",
+        "time": "8:00PM Every Sun",
+        "signle_price": "USD 24.50",
+        "group_size": "1-4",
+        "group-_rice": "USD 18.50",
+        "duration": "60 min"
+    },
+    {
+        "id": 1001,
+        "type": "CRAFTING",
+        "title": "Let’s build a guitar ourselves!!! ",
+        "location": "France, Paris",
+        "author": "Jackson Willian",
+        "language": "French",
+        "time": "3:00PM Every Sat",
+        "signle_price": "USD 50.50",
+        "group_size": "1-2",
+        "group-_rice": "USD 40.50",
+        "duration": "90 min"
+    }
+]

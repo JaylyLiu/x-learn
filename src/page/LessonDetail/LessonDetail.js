@@ -1,5 +1,6 @@
-import React from 'react';
+import React ,{ useState } from 'react';
 import Carousel from '@brainhubeu/react-carousel';
+import { useHistory } from 'react-router-dom'
 import '@brainhubeu/react-carousel/lib/style.css';
 import LessonDetailStyles from './LessonDetail.module.scss';
 import "./Ld.scss";
@@ -7,17 +8,22 @@ import "./Ld.scss";
 // import Paris from '../Homepage/images/pa.png';
 // import Russia from '../Homepage/images/ru.png';
 import cook from "./Imgs/cook.mp4";
+import star from "./Imgs/star.svg";
+import four from "./Imgs/four.png";
+import Frame918 from "./Imgs/Frame918.png";
 import WechatIMG43 from "./Imgs/WechatIMG43.png";
+import foodIcon from "./Imgs/food.png";
+import guitar from "./Imgs/guitar.png";
+import Details from "./Details.json";
 
 const styles = {...LessonDetailStyles};
 
-function LessonDetail() {
-  
+function LessonDetail(props) {
+  let  History=useHistory();
+  const [isFood,useSetFood]=useState(History.location.pathname.indexOf("food")!==-1?true:false);
   return (
     <div className={styles.lessonDetail}>
-      LessonDetail
-      
-<Carousel
+     <Carousel
  addArrowClickHandler
 >  
 <div className={styles.imgbox}>
@@ -31,8 +37,35 @@ function LessonDetail() {
         </video>
     </Carousel>
     <div className={styles.contents}>
-      <header>Crafting</header>
-      <h1>Let’s build a guitar ourselves!!! </h1>
+      <header className={styles.header}>Crafting
+      <img  src={star} alt="star" className={styles.starimg}/>
+      <img  src={four} alt="four"/>
+      </header>
+      <h1>
+        {!!isFood&&Details[0].title}
+        {!isFood&&Details[1].title}
+      </h1>
+      <div>
+        <img src={Frame918} alt="china"/>
+      </div>
+      {!!isFood&&<div className={styles.flexbox}>
+        <img src={foodIcon} alt="china" width="48"/>
+        Jackson Willian
+      </div>}
+      {!isFood&&<div className={styles.flexbox}>
+        <img src={guitar} alt="china" width="48"/>
+        Lina Manson
+      </div>}
+      <div className={styles.introbox}>
+        <section className={styles.subintrobox}>
+          <div className={styles.subintroTitle}>Language</div>
+          <div className={styles.subintroTitle}>TIME</div>
+        </section>
+        <section className={styles.subintrobox}>
+         <div  className={styles.subintroTitle}>Group size</div>
+          <div className={styles.subintroTitle}>Duration</div>
+        </section>
+      </div>
      </div>
     </div>
   )

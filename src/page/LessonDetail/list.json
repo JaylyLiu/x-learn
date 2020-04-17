@@ -1,0 +1,14 @@
+[
+    {
+        "type": "FOOD",
+        "description": "Traditional Italian food cooking experience ",
+        "price": "Italian • 1.5hr • $50.50",
+        "image": "picture1"
+    },
+    {
+        "country_code": "MOVE",
+        "description": "Traditional Italian food cooking experience ",
+        "price": "Italian • 1.5hr • $50.50",
+        "image": "picture2"
+    }
+]
