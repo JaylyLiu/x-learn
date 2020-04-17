@@ -7,12 +7,16 @@ const styles = { ...LessonStyles };
 
 function LessonList() {
   useEffect(() => {
+    initialFun();
+  }, [])
+  
+  const initialFun = () => {
     dsbridge.call('hideBottomBar');
     console.log('hideBottomBar');
-  }, [])
+  }
   return (
     <div className={styles.lessonList}>
-
+      {initialFun()}
       <div className={styles.header}>
         <div className={styles.text1}>Upcoming</div>
         <div className={styles.text2}>Completed</div>
