@@ -51,13 +51,14 @@ function Navigation() {
 
 function Homepage() {
   const [show, setShow] = useState(false);
-  const [currentCountry, setCurrentCountry] = useState('');
+  // const [currentCountry, setCurrentCountry] = useState('');
   // const [payMethod, setPayMethod] = useState(0);
 
 
   const handleCountryBeClicked = (src) => {
     setShow(true);
-    setCurrentCountry(src);
+    openListPage();
+    // setCurrentCountry(src);
   }
 
   return (
