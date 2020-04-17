@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ReactDOM, { createPortal } from "react-dom";
+import { createPortal } from "react-dom";
 import { CSSTransition } from "react-transition-group";
 import PropTypes from "prop-types";
 import WhiteArrow from './WhiteArrow';
