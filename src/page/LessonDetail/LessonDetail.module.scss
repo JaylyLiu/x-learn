@@ -34,13 +34,15 @@
 .flexbox{
   display: flex;
   align-items: center;
+  margin-top: 27px;
+  margin-bottom: 24px;
   img{
     margin-right: 8px;
   }
 }
 .subintrobox{
-  display: flex;
-  justify-content: space-around;
+  // display: flex;
+  // justify-content: space-around;
 }
 .subintroTitle{
   font-weight: 300;
@@ -48,10 +50,6 @@ font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.75px;
 text-transform: uppercase;
-
-  width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .footer {
@@ -126,4 +124,11 @@ text-transform: uppercase;
   .top {
 
   }
+}
+.contentii{
+  font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #4D4D4D;
 }

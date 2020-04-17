@@ -57,13 +57,29 @@ function LessonDetail(props) {
         Lina Manson
       </div>}
       <div className={styles.introbox}>
-        <section className={styles.subintrobox}>
-          <div className={styles.subintroTitle}>Language</div>
-          <div className={styles.subintroTitle}>TIME</div>
+        <section >
+          <div  style={{display:"flex",marginBottom:"6px"}}>
+           <div  className={styles.subintroTitle}> Language</div> 
+           <div className={styles.subintroTitle} 
+           style={{marginLeft:"76px"}}> TIME</div>
+          </div>
+         
+          <div  style={{display:"flex",marginBottom:"17px"}}>
+            <div className={styles.contentii}> English</div>
+            <div  className={styles.contentii} style={{marginLeft:"96px"}}> 8:00PM Every Sat</div>
+            </div>
+          
         </section>
-        <section className={styles.subintrobox}>
-         <div  className={styles.subintroTitle}>Group size</div>
-          <div className={styles.subintroTitle}>Duration</div>
+        <section >
+         <div style={{display:"flex" , marginBottom:"6px" }}>
+           <div className={styles.subintroTitle}>Group size</div>
+           <div className={styles.subintroTitle} style={{marginLeft:"70px"}}> Duration</div>
+         </div>
+          <div style={{display:"flex"   }}>
+           <div className={styles.contentii}>1-4 </div>
+           <div  className={styles.contentii} style={{marginLeft:"125px"}}> 30 minutes</div>
+          </div>
+
         </section>
       </div>
      </div>
