@@ -5,12 +5,11 @@ import dsbridge from 'dsbridge';
 import '@brainhubeu/react-carousel/lib/style.css';
 import LessonDetailStyles from './LessonDetail.module.scss';
 import "./Ld.scss";
-// import Korea from '../Homepage/images/ko.png';
-// import Paris from '../Homepage/images/pa.png';
-// import Russia from '../Homepage/images/ru.png';
 import cook from "./Imgs/cook.mp4";
+import gultl from "./Imgs/gultl.mp4";
 import star from "./Imgs/star.svg";
 import four from "./Imgs/four.png";
+import ggg from "./Imgs/ggg.png";
 import Frame918 from "./Imgs/Frame918.png";
 import WechatIMG43 from "./Imgs/WechatIMG43.png";
 import foodIcon from "./Imgs/food.png";
@@ -43,17 +42,31 @@ function LessonDetail(props) {
           <span className={styles.share}><WhiteShare /></span>
         </span>
       </div>
-      <Carousel addArrowClickHandler>
-        <div className={styles.imgbox}>
+      {!!isFood&&<Carousel addArrowClickHandler>
+      {/* {!isFood&& <div className={styles.imgbox}>
+          <img className={styles.img} src={ggg} alt="cook" />
+        </div>} */}
+       {!!isFood&& <div className={styles.imgbox}>
           <img className={styles.img} src={WechatIMG43} alt="cook" />
-        </div>
+        </div>}
 
-        <video controls
-          // autoPlay 
+        {!!isFood&&<video controls
+           autoPlay 
           controlsList="nodownload" className={styles.video} >
           <source src={cook} type="video/mp4" />
-        </video>
-      </Carousel>
+        </video>}
+        
+      </Carousel>}
+     {!isFood&& <Carousel addArrowClickHandler>
+      {!isFood&& <div className={styles.imgbox}>
+          <img className={styles.img1} src={ggg} alt="cook" />
+        </div>}
+        {!isFood&&<video controls
+          autoPlay 
+          controlsList="nodownload" className={styles.video} >
+          <source src={gultl} type="video/mp4" />
+        </video>}
+      </Carousel>}
       <div className={styles.contents}>
         <header className={styles.header}>Crafting
           <img src={star} alt="star" className={styles.starimg} />
