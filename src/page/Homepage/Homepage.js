@@ -17,10 +17,13 @@ function Navigation() {
   
   const [selectedItem, setSelectedItem] = useState(0);
 
+<<<<<<< HEAD
   const openListPage = () => {
      dsbridge.call('openCountryList');
   }
 
+=======
+>>>>>>> f5eb68a02c3de5c1f81c5b3fb373fd8f7202a56e
   return (
     <ul className={styles.navigation}>
       <li className={
@@ -54,10 +57,15 @@ function Navigation() {
 function Homepage() {
   let History=useHistory();
   const [show, setShow] = useState(false);
-  const [currentCountry, setCurrentCountry] = useState('');
+  // const [currentCountry, setCurrentCountry] = useState('');
   // const [payMethod, setPayMethod] = useState(0);
 
+  const openListPage = () => {
+    dsbridge.call('openCountryList');
+    console.log('openCountryList');
+  }
 
+<<<<<<< HEAD
   const handleCountryBeClicked = (src,country) => {
     // setShow(true);
     // setCurrentCountry(src);
@@ -67,6 +75,12 @@ function Homepage() {
     
     // eslint-disable-next-line no-undef
     History.push({ pathname: `detail/${src}`});
+=======
+  const handleCountryBeClicked = (src) => {
+    setShow(true);
+    openListPage();
+    // setCurrentCountry(src);
+>>>>>>> f5eb68a02c3de5c1f81c5b3fb373fd8f7202a56e
   }
 
   return (
@@ -115,4 +129,4 @@ function Homepage() {
   )
 }
 
-export default Homepage
+export default Homepage;
