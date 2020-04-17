@@ -15,10 +15,6 @@ const styles = { ...HomepageStyles };
 function Navigation() {
   const [selectedItem, setSelectedItem] = useState(0);
 
-  const openListPage = () => {
-    dsbridge.call('openCountryList');
-  }
-
   return (
     <ul className={styles.navigation}>
       <li className={
@@ -54,6 +50,10 @@ function Homepage() {
   // const [currentCountry, setCurrentCountry] = useState('');
   // const [payMethod, setPayMethod] = useState(0);
 
+  const openListPage = () => {
+    dsbridge.call('openCountryList');
+    console.log('openCountryList');
+  }
 
   const handleCountryBeClicked = (src) => {
     setShow(true);
@@ -107,4 +107,4 @@ function Homepage() {
   )
 }
 
-export default Homepage
+export default Homepage;
