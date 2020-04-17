@@ -2,17 +2,19 @@
   margin: 0 auto;
   max-width: 700px;
   width: 100%;
+  padding-bottom: 72px;
 }
-.imgbox{
+.imgbox {
   margin-bottom:0;
 }
-.img{height: 100%;
-  }
-.video{
+.img {
+  height: 100%;
+}
+.video {
   height: 100%;
   margin-bottom: 0;
 }
-.contents{
+.contents {
   background: #FAFAFC;
   box-shadow: 0px 5px 25px rgba(0, 40, 117, 0.1);
   border-radius: 30px 30px 0px 0px;
@@ -20,7 +22,7 @@
   padding-right: 16px;
   padding-top: 37px;
 }
-.header{
+.header {
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
@@ -28,40 +30,96 @@
   text-transform: uppercase;
   color: #8C8C8C;
 }
-.starimg{
+.starimg {
   margin-left: 10px;
 }
-.flexbox{
+.flexbox {
   display: flex;
   align-items: center;
-  img{
+  img {
     margin-right: 8px;
   }
 }
-.subintrobox{
+.subintrobox {
   display: flex;
   justify-content: space-around;
 }
-.subintroTitle{
+.subintroTitle {
   font-weight: 300;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.75px;
-text-transform: uppercase;
-
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
 }
 
+  .experience {
+    padding: 22px 16px;
+    .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      color: #333333;
+    }
+    .descption {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #4D4D4D;
+    }
+  }
+  .reviews {
+    padding: 22px 16px;
+    .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      color: #333333;
+    }
+    .content {
+      display: flex;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .headerBox {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    padding: 22px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .right {
+      display: flex;
+      .heart {
+        margin-right: 28px;
+      }
+      .share {
+        
+      }
+
+    }
+
+  }
 .footer {
-  padding: 13px 16px 11px;
-  border-top: 1px solid #33333338;
+  position: fixed;
+  bottom: 0;
   height: 72px;
   width: 100%;
   box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
+  padding: 13px 16px 11px;
+  border-top: 1px solid #33333338;
+  background-color: #fff;
 
   .box {
     display: flex;
