@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+//import { useHistory } from 'react-router-dom';
 import cx from 'classnames';
 import dsbridge from 'dsbridge';
 import Avatar from './images/avatar.png';
@@ -30,25 +30,25 @@ function Navigation() {
           [styles.selected]: selectedItem === 1,
         })}
         onClick={() => setSelectedItem(1)}
-      >Afreca</li>
+      >Europe</li>
       <li className={
         cx(styles.nav, {
           [styles.selected]: selectedItem === 2,
         })}
         onClick={() => setSelectedItem(2)}
-      >ASIA</li>
+      >Asia</li>
       <li className={
         cx(styles.nav, {
           [styles.selected]: selectedItem === 3,
         })}
         onClick={() => setSelectedItem(3)}
-      >Eupope</li>
+      >Africa</li>
     </ul>
   )
 }
 
 function Homepage() {
-  let History=useHistory();
+  // let History=useHistory();
   const [show, setShow] = useState(false);
   // const [currentCountry, setCurrentCountry] = useState('');
   // const [payMethod, setPayMethod] = useState(0);

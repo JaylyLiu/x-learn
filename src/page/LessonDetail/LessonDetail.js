@@ -25,7 +25,7 @@ const styles = { ...LessonDetailStyles };
 
 function LessonDetail(props) {
   let history = useHistory();
-  const [isFood, useSetFood] = useState(history.location.pathname.indexOf("food") !== -1 ? true : false);
+  const [isFood] = useState(history.location.pathname.indexOf("food") !== -1 ? true : false);
 
   const closeSelf = () => {
     dsbridge.call('closeSelf');
