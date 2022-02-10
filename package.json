@@ -12,7 +12,7 @@
     "dsbridge": "^3.1.4",
     "enzyme": "^3.11.0",
     "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "rc-checkbox": "^2.2.0",
     "react": "^16.13.1",
